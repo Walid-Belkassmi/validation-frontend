@@ -8,7 +8,7 @@ const UserCard = ({ user }) => {
       <div className="rounded-lg shadow-lg bg-white max-w-sm">
         <div className="h-80 overflow-hidden">
           <img
-            className="rounded-t-lg object-cover"
+            className="rounded-t-lg object-cover object-contain h-48 w-96"
             src={user.profile_picture}
             alt=""
           />

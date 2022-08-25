@@ -9,13 +9,13 @@ const Header = () => {
         </span>
       </Link>
       <nav className="flex items-center gap-5">
-        <Link to="/" className="text-emerald-600 font-medium">
+        <Link to="/" className="text-lime-600 font-medium ">
           Home
         </Link>
-        <Link to="/" className="text-emerald-600 font-medium">
+        {/* <Link to="/" className="text-lime-600 font-medium">
           Users
-        </Link>
-        <Link to="" className="text-emerald-600 font-medium">
+        </Link> */}
+        <Link to="/new-user" className="text-lime-600 font-medium">
           New User
         </Link>
       </nav>
