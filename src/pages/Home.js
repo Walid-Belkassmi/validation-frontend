@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 
 import H1 from "../components/H1";
+import UserCard from "../components/UserCard";
+import Grid from "../components/Grid";
 
 const Home = () => {
   const [users, setUsers] = useState([]);
@@ -19,6 +21,11 @@ const Home = () => {
   return (
     <>
       <H1>Home</H1>
+      <Grid>
+        {users.map((user) => (
+          <UserCard key={user.slug} user={user} />
+        ))}
+      </Grid>
     </>
   );
 };
